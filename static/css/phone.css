@@ -1,0 +1,58 @@
+body
+{
+    background-color: red;
+}
+
+/* navigatin section  */
+
+#navbar{
+    flex-direction: column;
+}
+
+ /* home section  */
+
+#home
+{
+    flex-direction: column;
+    height: 333px;
+    width: 113%;
+}
+#home::before
+{
+    height: 407px;
+    
+}
+#home p
+{
+    font-size: 12px;
+}
+
+
+ /* services section  */
+ #services-container
+{
+    height: 100%;
+}
+#services
+{
+    flex-direction: column;
+}
+
+ s
+ /* clients section  */
+ #clients
+ {
+     /* overflow: hidden; */
+     flex-direction: column;
+     display: flex;
+ }
+
+ /* contact section  */
+
+
+ /* footer section   */
+ /* utility clases */
+ .h-primary
+ {
+     font-size: 30px;
+ }

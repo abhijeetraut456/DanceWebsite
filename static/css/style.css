@@ -1,0 +1,281 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+ {
+   background-color: white;
+ }
+#navbar
+{
+    /* background-color: #6d4741; */
+ 
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+}
+#navbar::before
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+ul
+{
+    display: flex;
+}
+li
+{
+    list-style: none;
+    margin: 0px 27px;
+    display: flex;
+    align-items: center;
+}
+ 
+li a
+{
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+
+}
+li a:hover
+{
+   color: black;
+}
+#logo
+{
+    display: flex;
+     align-items: center;
+     color: #046158;
+     font-size: 12px;
+     margin: 0px 4px;
+     font-family: 'Architects Daughter', cursive;
+     cursor: pointer;
+     background-color: #e6e6e6;
+    border-radius: 35px;
+ 
+}
+#logo h1
+{
+    margin: 0px 13px;
+}
+
+#logo img
+{
+    height: 73px;
+    border-radius: 27px;
+}
+
+.img
+{
+    margin: 0px 8px;
+}
+ 
+/* Home section  */
+#home
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 518px;
+}
+#home p
+{font-family: 'Josefin Sans', sans-serif;
+    padding: 2px;
+    font-size: 22px;
+    color: white;
+}
+
+#home::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 591px;
+    width: 100%;
+    background: url('/images/dd.jpg') no-repeat center center/cover ;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+
+/* services section  */
+#services-container
+{
+    background-color: #a6d2a3;
+    height: 570px;
+}
+#services
+{
+    display: flex;
+    width: 94%;
+    margin: auto;
+}
+ #services .box
+ {
+    border: 2px solid red;
+    border-radius: 30px;
+    width: 540px;
+    margin: 0px auto;
+    padding: 10px 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #d6c6cb;
+}
+  
+#services .box img
+{
+    height: 244px;
+    width: 332px;
+    display: block;
+    margin: auto;
+}
+ 
+
+/* clients section  */
+ #client-section
+ {
+    background-color: gray;
+    margin: 26px 0px;
+    border-radius: 55px;
+    height: 408px;
+}
+  
+
+.clients
+ {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ }
+ .client-item
+ {
+     margin: 0px 20px;
+
+ }
+ .client-item img
+ {
+     height: 253px;
+ }
+ 
+ /* Contact section  */
+ #contact
+ {
+     position: relative;
+ }
+
+    #contact::before
+    {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: url('/images/client/c2.jpg') no-repeat center center /cover;
+        z-index: -1;
+        opacity: 0.2px;
+        height: 100%;
+        width: 100%;
+    }
+ 
+     #contact-box
+     {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding-bottom: 40px;
+     }
+     #contact-box form
+     {
+         width: 40%;
+     }
+     #contact-box label
+     {
+         font-size: 20px;
+         font-family: 'Josefin Sans', sans-serif
+     }
+     #contact-box input, textarea
+     {
+        width: 100%;
+        padding: 11px 14px;
+        border-radius: 8px;
+        border: 2px solid #ea10ca;
+        font-family: 'Josefin Sans', sans-serif
+    }
+    .form-group 
+    {
+        margin: 8px 2px;
+    }
+      
+
+    /* footer section  */
+    footer{
+       
+        color: white;
+        padding: 13px 12px;
+        text-align: center;
+        background-color: #0a0101;
+    font-family: 'Josefin Sans', sans-serif;
+
+    }
+
+    /* utility classes  */
+.h-primary
+{
+    font-size: 54px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px;
+    color: #3e013c;
+}
+.h-secondry
+{
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px;
+}
+.center
+{
+   text-align: center;
+}
+.btn
+{
+    padding: 9px 20px;
+    margin-top: 33px;
+    border-radius: 9px;
+    background-color: white;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.btns
+{
+    padding: 6px 6px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+ .btns:hover
+ {
+     background-color: black;
+     color: white;
+     cursor: pointer;
+ }
+.btn:hover
+{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
